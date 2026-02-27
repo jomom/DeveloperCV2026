@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Theme */
+  --color-bg: #DFD0B8;
+  --color-surface: #D8C8AF;
+  --color-muted: #393E46;
+  --color-high: #222831;
+  --spotlight-color: rgba(34, 40, 49, 0.04);
+}
+
+.dark {
+  /* Dark Theme */
+  --color-bg: #222831;
+  --color-surface: #393E46;
+  --color-muted: #948979;
+  --color-high: #DFD0B8;
+  --spotlight-color: rgba(223, 208, 184, 0.06);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-high);
+  cursor: default;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-size: 15px;
+}
+
+::selection {
+  background-color: var(--color-high);
+  color: var(--color-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Smooth UI Components */
+@layer components {
+  .smooth-pill {
+    @apply relative p-[1px] overflow-hidden rounded-full transition-all duration-300;
+    background: linear-gradient(180deg, rgba(148, 137, 121, 0.2) 0%, rgba(34, 40, 49, 0.05) 100%);
+  }
+  .dark .smooth-pill {
+    background: linear-gradient(180deg, rgba(148, 137, 121, 0.15) 0%, rgba(223, 208, 184, 0.03) 100%);
+  }
+  .smooth-pill span {
+    @apply block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest transition-colors;
+    background-color: var(--color-surface);
+  }
+  .dark .smooth-pill span {
+    background-color: #2b313a;
+  }
+}
