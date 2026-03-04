@@ -8,7 +8,7 @@
   --color-surface: #D8C8AF;
   --color-muted: #393E46;
   --color-high: #222831;
-  --spotlight-color: rgba(34, 40, 49, 0.04);
+  --spotlight-color: rgba(34, 40, 49, 0.05);
 }
 
 .dark {
@@ -17,15 +17,20 @@
   --color-surface: #393E46;
   --color-muted: #948979;
   --color-high: #DFD0B8;
-  --spotlight-color: rgba(223, 208, 184, 0.06);
+  --spotlight-color: rgba(223, 208, 184, 0.08);
 }
 
 body {
+  font-family: 'Ovo', serif;
   background-color: var(--color-bg);
   color: var(--color-high);
   cursor: default;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, nav, button, .font-heading {
+  font-family: 'Outfit', sans-serif;
 }
 
 ::selection {

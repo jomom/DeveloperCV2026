@@ -27,52 +27,9 @@
         },
       }
     </script>
-    <style>
-      @layer base {
-        :root {
-          /* Light Theme using Palette */
-          --color-bg: #DFD0B8;
-          --color-surface: #D8C8AF;
-          --color-muted: #393E46;
-          --color-high: #222831;
-          --spotlight-color: rgba(34, 40, 49, 0.05);
-        }
-        .dark {
-          /* Dark Theme using Palette */
-          --color-bg: #222831;
-          --color-surface: #393E46;
-          --color-muted: #948979;
-          --color-high: #DFD0B8;
-          --spotlight-color: rgba(223, 208, 184, 0.08);
-        }
-        body {
-          font-family: 'Ovo', serif;
-          background-color: var(--color-bg);
-          color: var(--color-high);
-          transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        h1, h2, h3, h4, h5, h6, nav, button, .font-heading {
-          font-family: 'Outfit', sans-serif;
-        }
-      }
-    </style>
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-dom": "https://esm.sh/react-dom@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "next/": "https://esm.sh/next@^16.1.6/",
-    "next": "https://esm.sh/next@^16.1.6"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="antialiased">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>

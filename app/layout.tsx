@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Joel Momanyi Nyaosi | Software Engineer',
-  description: 'A high-end portfolio for Joel Momanyi Nyaosi, Senior Software Engineer.',
+  description: 'A developer portfolio for Joel Momanyi Nyaosi, Senior Software Engineer.',
 };
 
 export default function RootLayout({
@@ -17,5 +17,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+    
   );
 }

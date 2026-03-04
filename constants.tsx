@@ -57,6 +57,15 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'proj-lms',
+    title: 'EduSphere Premium LMS',
+    description: 'A comprehensive Learning Management System landing page featuring a course catalog, instructor profiles, and integrated booking systems. Built for conversion with a dark-mode first design.',
+    imageUrl: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800',
+    projectUrl: '#',
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    stars: 240,
+  },
+  {
     id: 'proj-1',
     title: 'Aura Music Visualizer',
     description: 'A web-based interactive music visualizer using Web Audio API and Canvas. Supports real-time frequency analysis and multiple particle-based themes.',
